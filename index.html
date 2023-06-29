@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet" />
+    <script src="https://vjs.zencdn.net/7.15.4/video.js"></script> -->
+
+
+
+    <link href="./node_modules/video.js/dist/video-js.css" rel="stylesheet">
+</head>
+
+</head>
+
+<body>
+    <h2>Video here</h2>
+
+    <video id="my-video" class="video-js vjs-default-skin" width="460px" controls>
+        <source src="https://860718898.tapecontent.net/radosgw/X2QlVbJZ73IDjOq/QiyxZjkLm0_Rcsp5CqDHV579mXweJNBTOYKWa-Rt1_UL_4HSb-y4xkRUKzV0XWk4VSoAxdgAOyPhrwiVePqTSk5JNUGmtMR7aT8349e96AAr9zuIMtMcUTCOiWijjJ1dLYvvg7vskgwcB5FN_OFNQThHMkJM1XxZR3zpTdP2uWYAiC5RrAh7IZ9iuvxNcBwPo0eBvwO8sJ2reEymAol7Zx2KG-iyu5pESR5jnZunCqAVN2JZkE2y3IFIDaL9IkPG2joDKZ5RqB1x5y70JCKrXQOxFcDMPfJv0scRBQ/tt15789038+ts+la.mp4?stream=1" type="video/mp4">
+    </video>
+
+    <!-- <video id="my-video" class="video-js vjs-default-skin" width="720px" controls>
+        <source src="./element.m3u8" type="application/x-mpegURL">
+    </video> -->
+
+
+    <script src="path/to/libs/video.js"></script>
+    <script src="./node_modules/video.js/dist/video.js"></script>
+    <script>
+        const player = videojs("my-video", {
+            playbackRates: [0.5, 1, 1.5, 2],
+            buffer: {
+                maxBufferLength: 30,
+                highBufferLength: 10,
+                bufferWhilePaused: true,
+            },
+        });
+
+
+    </script>
+</body>
+
+</html>

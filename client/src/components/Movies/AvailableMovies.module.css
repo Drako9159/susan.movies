@@ -1,0 +1,119 @@
+.container {
+  background-color: #0c1435;
+  color: #ffffff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat";
+}
+.container h2 {
+}
+.movies {
+  display: flex;
+  gap: 15px;
+  padding: 5px;
+}
+.movie {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+.movie .primary {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.movie .primary .movieInside {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.movie .poster {
+  position: relative;
+  z-index: 1;
+  width: 150px;
+  height: 230px;
+  border-radius: 5px;
+  box-shadow: 0 0 2px #000000;
+  background-color: red;
+  transition: filter 0.3s ease;
+}
+.movies .primary:hover .poster {
+  filter: brightness(70%);
+}
+.movies .primary:hover .playButton {
+  max-width: 70px;
+  max-height: 70px;
+}
+
+.movie p {
+  margin: 0;
+  padding: 5px;
+}
+
+.playButton {
+  position: absolute;
+  top: 50;
+  left: 50;
+  z-index: 2;
+  width: 70px;
+  height: 70px;
+  max-width: 0px;
+  max-height: 0px;
+  transition: max-width 0.3s ease;
+  transition: max-height 0.3s ease;
+}
+
+.info {
+  position: absolute;
+  top: 50;
+  left: 50;
+  z-index: 3;
+  background-color: red;
+  transform: translateX(100px);
+  border-radius: 10px;
+}
+.info .infoInside {
+  padding: 10px;
+  width: 200px;
+}
+.info .infoInside h2 {
+  font-size: 14px;
+}
+.info .infoInside div ul {
+  display: flex;
+  list-style: none;
+  padding: 5px 0;
+  margin: 0;
+  gap: 10px;
+}
+.info .infoInside div ul li{
+    display: flex;
+    align-items: center;
+}
+
+.info .infoInside div ul li:nth-child(3) {
+  color: rgb(15, 15, 15);
+  padding: 1px 5px;
+  background-color: rgb(173, 136, 14);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+.info .infoInside p {
+  font-size: 11px;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 1px;
+}
