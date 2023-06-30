@@ -69,19 +69,29 @@
   transition: max-width 0.3s ease;
   transition: max-height 0.3s ease;
 }
+.movies .primary:hover .info{
+    display: flex;
+    
+  }
 
 .info {
   position: absolute;
   top: 50;
   left: 50;
   z-index: 3;
-  background-color: red;
-  transform: translateX(100px);
+  transform: translateX(190px);
   border-radius: 10px;
+  width: 270px;
+  display: none;
+  
 }
 .info .infoInside {
   padding: 10px;
-  width: 200px;
+
+  position: relative;
+  z-index: 2;
+
+  backdrop-filter: blur(5px);
 }
 .info .infoInside h2 {
   font-size: 14px;
@@ -93,21 +103,23 @@
   margin: 0;
   gap: 10px;
 }
-.info .infoInside div ul li{
-    display: flex;
-    align-items: center;
+.info .infoInside div ul li {
+  display: flex;
+  align-items: center;
 }
 
 .info .infoInside div ul li:nth-child(3) {
+  width: 40px;
   color: rgb(15, 15, 15);
-  padding: 1px 5px;
-  background-color: rgb(173, 136, 14);
+  padding: 0px 5px;
+  background-color: #f6fa17d3;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 10px;
 }
+
 .info .infoInside p {
   font-size: 11px;
   display: -webkit-box;
@@ -116,4 +128,15 @@
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 1px;
+ 
+}
+.info .banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  object-fit: cover;
+  backdrop-filter: blur(5px);
 }

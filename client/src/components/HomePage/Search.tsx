@@ -120,6 +120,7 @@ export default function Search() {
               <option value="video/webm">webm</option>
               <option value="video/x-matroska">mkv</option>
               <option value="video/mp2t">ts</option>
+              <option value="application/x-mpegURL">ts-m3u8</option>
             </select>
             <input
               type="text"

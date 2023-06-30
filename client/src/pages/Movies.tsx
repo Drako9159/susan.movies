@@ -6,7 +6,6 @@ import AvailableMovies from "../components/Movies/AvailableMovies";
 
 export default function Movies() {
   const setMovies = useMoviesStore((state) => state.setMoviesStore);
-  const movies = useMoviesStore((state) => state.movies);
 
   useEffect(() => {
     async function api() {

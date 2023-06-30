@@ -1,0 +1,65 @@
+.container {
+  font-family: "Montserrat";
+  display: flex;
+  background-color: rgb(22, 24, 41);
+  color: #ffffff;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  z-index: 2;
+  padding: 20px;
+}
+.left {
+}
+
+.left img {
+  width: 150px;
+  height: 250px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.right {
+  padding: 10px;
+}
+.right ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.right ul li:nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+.right ul li:nth-child(3) {
+  width: 40px;
+  color: rgb(15, 15, 15);
+  padding: 0px 5px;
+  background-color: #f6fa17d3;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+.player {
+  z-index: 2;
+}
+.container .banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  filter: brightness(70%);
+}

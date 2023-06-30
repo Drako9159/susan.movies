@@ -15,7 +15,7 @@ export default function VideoPlayer({
 
   useEffect(() => {
     if (videoRef.current && document.body.contains(videoRef.current)) {
-      const player = videojs(videoRef.current, {
+      videojs(videoRef.current, {
         playbackRates: [0.5, 1, 1.5, 2],
         buffer: {
           maxBufferLength: 30,

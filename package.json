@@ -28,10 +28,14 @@
     "uuid": "9.0.0"
   },
   "dependencies": {
+    "@types/axios": "^0.14.0",
     "@types/bcrypt": "^5.0.0",
     "@types/cors": "^2.8.13",
     "@types/jsonwebtoken": "^9.0.2",
+    "@types/node-fetch": "^2.6.4",
     "@types/uuid": "^9.0.2",
+    "axios": "^1.4.0",
+    "node-fetch": "^3.3.1",
     "video.js": "^8.3.0"
   }
 }
