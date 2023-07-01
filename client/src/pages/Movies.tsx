@@ -18,7 +18,7 @@ export default function Movies() {
   return (
     <>
       <AvailableMovies />
-      <CardPrimaryMovie></CardPrimaryMovie>
+      {/* <CardPrimaryMovie></CardPrimaryMovie> */}
     </>
   );
 }

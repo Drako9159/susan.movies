@@ -32,17 +32,7 @@ export default function Search() {
     const pageValue = pageRef.current?.value;
 
     api(titleValue!, languageValue!, pageValue!);
-    // console.log(results)
 
-    // if (titleRef.current) {
-    //   titleRef.current.value = "";
-    // }
-    // if (languageRef.current) {
-    //   languageRef.current.value = "";
-    // }
-    // if (pageRef.current) {
-    //   pageRef.current.value = "";
-    // }
   }
   function handleSelector(element: any) {
     setItem(element);
@@ -62,8 +52,6 @@ export default function Search() {
     };
 
     const res = await pushElementRequest(prepare);
-
-    console.log(res);
   }
 
   return (
@@ -144,16 +132,26 @@ export default function Search() {
               <div className={styles.result}>
                 <h3>{item.title}</h3>
                 <h3>{item.name}</h3>
-                <h3>{item.media_type}</h3>
+                <h3 style={{ color: "#cccccc" }}>{item.media_type}</h3>
                 <p>{item.overview}</p>
-                <img
-                  className={styles.poster}
-                  src={`https://image.tmdb.org/t/p/w500/${item.poster_path}`}
-                />
-                <img
-                  className={styles.banner}
-                  src={`https://image.tmdb.org/t/p/w500/${item.backdrop_path}`}
-                />
+                {!item.poster_path ? (
+                  ""
+                ) : (
+                  <img
+                    className={styles.poster}
+                    src={`https://image.tmdb.org/t/p/w500/${item.poster_path}`}
+                    draggable={false}
+                  />
+                )}
+                {!item.backdrop_path ? (
+                  ""
+                ) : (
+                  <img
+                    className={styles.banner}
+                    src={`https://image.tmdb.org/t/p/w500/${item.backdrop_path}`}
+                    draggable={false}
+                  />
+                )}
               </div>
             </div>
           )}
@@ -171,16 +169,28 @@ export default function Search() {
                 >
                   <h3>{e.title}</h3>
                   <h3>{e.name}</h3>
-                  <h3>{e.media_type}</h3>
+                  <h3 style={{ color: "#cccccc" }}>{e.media_type}</h3>
                   <p>{e.overview}</p>
-                  <img
-                    className={styles.poster}
-                    src={`https://image.tmdb.org/t/p/w500/${e.poster_path}`}
-                  />
-                  <img
-                    className={styles.banner}
-                    src={`https://image.tmdb.org/t/p/w500/${e.backdrop_path}`}
-                  />
+                  <div className={styles.images}>
+                    {!e.poster_path ? (
+                      ""
+                    ) : (
+                      <img
+                        className={styles.poster}
+                        src={`https://image.tmdb.org/t/p/w500/${e.poster_path}`}
+                        draggable={false}
+                      />
+                    )}
+                    {!e.backdrop_path ? (
+                      ""
+                    ) : (
+                      <img
+                        className={styles.banner}
+                        src={`https://image.tmdb.org/t/p/w500/${e.backdrop_path}`}
+                        draggable={false}
+                      />
+                    )}
+                  </div>
                 </div>
               );
             })}

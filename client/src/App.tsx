@@ -4,6 +4,7 @@ import Wrapper from "./components/Extra/Wrapper";
 import Layout from "./components/Extra/Layout";
 import Movies from "./pages/Movies";
 import Watcher from "./pages/Watcher";
+import Dashboard from "./pages/Dashboard";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/movies" element={<Movies />} />
             <Route path="/movies/:id" element={<Watcher />} />
+            <Route path="/dashboard" element={<Dashboard />} />
           </Routes>
         </BrowserRouter>
       </Wrapper>
