@@ -3,6 +3,7 @@ import express, { Express, NextFunction, Request, Response } from "express";
 import path from "node:path";
 import moviesRoutes from "./routes/movies.routes";
 import searchRoutes from "./routes/search.routes";
+import iptvRoutes from "./routes/iptv.routes"
 import authRoutes from "./routes/auth.routes";
 // import postsRoutes from "./routes/posts.routes";
 // import dotenv from "dotenv";
@@ -34,6 +35,7 @@ app.use(express.static(path.join(process.cwd(), "./client/dist")));
 app.use("/api", moviesRoutes);
 app.use("/api", searchRoutes);
 app.use("/api", authRoutes)
+app.use("/api", iptvRoutes)
 // app.use("/api", postsRoutes);
 
 app.get("*", (req: Request, res: Response, next: NextFunction) => {

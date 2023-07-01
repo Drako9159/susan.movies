@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
-import { deleteMovieRequest, getMoviesRequest } from "../../api/movies";
-import { useMoviesStore } from "../../store/movies";
-import styles from "./CardPrimaryDashboard.module.css";
-import UpdateMovie from "../Search/UpdateMovie";
+import { getIptvRequest } from "../../api/iptvs";
+import { deleteIptvRequest } from "../../api/iptvs";
+import styles from "./IptvList.module.css";
+import UpdateIptv from "../Search/UpdateIptv";
+import { useIptvStore } from "../../store/iptv";
 
-export default function CardPrimaryDashboard({ setTitle }: { setTitle: any }) {
-  setTitle("Movies");
-  const setMovies = useMoviesStore((state) => state.setMoviesStore);
-  const movies = useMoviesStore((state) => state.movies);
+export default function IptvList({ setTitle }: { setTitle: any }) {
+  setTitle("IPTV");
+  const setIptvStore = useIptvStore((state) => state.setIptvStore);
+  const iptvs = useIptvStore((state) => state.iptvs);
+
   const [item, setItem] = useState<any>(null);
   const [isUpdate, setIsUpdate] = useState<boolean>(false);
 
@@ -16,14 +18,14 @@ export default function CardPrimaryDashboard({ setTitle }: { setTitle: any }) {
   }, []);
 
   async function api() {
-    const res = await getMoviesRequest();
-    setMovies(res.data.content);
+    const res = await getIptvRequest();
+    setIptvStore(res.data.content);
   }
 
-  async function deleteMovie(id: string) {
-    const res = await deleteMovieRequest(id);
+  async function deleteIptv(id: string) {
+    const res = await deleteIptvRequest(id);
     if (res.status === 204) {
-      setMovies(movies.filter((e: any) => e.id !== id));
+      setIptvStore(iptvs.filter((e: any) => e.id !== id));
     }
   }
 
@@ -34,21 +36,17 @@ export default function CardPrimaryDashboard({ setTitle }: { setTitle: any }) {
 
   return (
     <div className={styles.container}>
-      {!movies
+      {!iptvs
         ? "No content"
-        : movies.map((e: any) => {
+        : iptvs.map((e: any) => {
             return (
               <div className={styles.card} key={e.id}>
                 <p>Title: {e.title}</p>
                 <p>Id: {e.id}</p>
-                <p>Language: {e.original_language}</p>
-                <p>Type: {e.media_type}</p>
-                <p>Date Release: {e.release_date}</p>
-                <p>Quality: {e.quality}</p>
                 <p>Source: {e.source}</p>
                 <p>Source Type: {e.source_type}</p>
                 <div className={styles.buttons}>
-                  <button onClick={() => deleteMovie(e.id)}>Delete</button>
+                  <button onClick={() => deleteIptv(e.id)}>Delete</button>
                   <button onClick={() => handleUpdate(e.id, e)}>Edit</button>
                 </div>
               </div>
@@ -57,7 +55,7 @@ export default function CardPrimaryDashboard({ setTitle }: { setTitle: any }) {
       {!isUpdate || !item ? (
         ""
       ) : (
-        <UpdateMovie
+        <UpdateIptv
           id={item.id}
           element={item.element}
           setIsUpdate={setIsUpdate}

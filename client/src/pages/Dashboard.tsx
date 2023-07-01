@@ -4,6 +4,8 @@ import Nav from "../components/Dashboard/Nav";
 import { useDashboardStore } from "../store/dashboard";
 import Search from "../components/Search/Search";
 import { useState } from "react";
+import UploadIptv from "../components/Search/UploadIptv";
+import IptvList from "../components/Dashboard/IptvList";
 
 export default function Dashboard() {
   const isAuth = useDashboardStore((state) => state.isAuth);
@@ -15,9 +17,13 @@ export default function Dashboard() {
     <>
       <Nav title={title} setComponent={setComponent} />
       {component === "movies" ? (
-        <CardPrimaryDashboard />
+        <CardPrimaryDashboard setTitle={setTitle} />
       ) : component === "search" ? (
-        <Search />
+        <Search setComponent={setComponent} setTitle={setTitle} />
+      ) : component === "push-iptv" ? (
+        <UploadIptv setComponent={setComponent} setTitle={setTitle}/>
+      ) : component === "iptv-list" ? (
+        <IptvList setTitle={setTitle}/>
       ) : (
         ""
       )}

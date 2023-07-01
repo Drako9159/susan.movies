@@ -8,6 +8,7 @@ import Dashboard from "./pages/Dashboard";
 import ScrollTopTop from "./hooks/useScroll";
 import useAuth from "./hooks/useAuth";
 import NotFound from "./components/Extra/NotFound";
+import WatcherIptv from "./pages/WatcherIptv";
 
 export default function App() {
   useAuth();
@@ -20,6 +21,7 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/movies" element={<Movies />} />
             <Route path="/movies/:id" element={<Watcher />} />
+            <Route path="/iptvs/:id" element={<WatcherIptv />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

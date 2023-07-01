@@ -3,11 +3,11 @@ import styles from "./Search.module.css";
 import { getMoviesRequest, updateMovieRequest } from "../../api/movies";
 import { useMoviesStore } from "../../store/movies";
 
-interface UpdateMovieProps {
-  setIsUpdate: React.Dispatch<React.SetStateAction<boolean>>;
-}
+// interface UpdateMovieProps {
+//   setIsUpdate: React.Dispatch<React.SetStateAction<boolean>>;
+// }
 
-export default function Search({
+export default function UpdateMovie({
   id,
   element,
   setIsUpdate,
@@ -46,6 +46,8 @@ export default function Search({
     const res = await updateMovieRequest(id, prepare);
     if (res.status === 200) {
       api();
+
+
     }
   }
 

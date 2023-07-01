@@ -37,10 +37,14 @@
   background-color: #424242;
   text-overflow: hidden;
   overflow: hidden;
+  
 }
 .nav ul li {
   margin: 0;
   padding: 10px 20px;
+  overflow: hidden;
+  display: -webkit-box;
+  
 }
 .nav ul li:hover {
   background-color: #5f5f5f;

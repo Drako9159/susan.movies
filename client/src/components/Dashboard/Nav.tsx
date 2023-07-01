@@ -1,5 +1,4 @@
 import styles from "./Nav.module.css";
-import { Link } from "react-router-dom";
 import iconMenu from "../../assets/icons/dashboard/menu.svg";
 import { useState } from "react";
 import { useDashboardStore } from "../../store/dashboard";
@@ -30,8 +29,10 @@ export default function Nav({ title, setComponent }: { title: string, setCompone
           <ul>
             <li onClick={logout}>Logout</li>
             <li onClick={() => setComponent("movies")}>Movies</li>
-            <li>Tv</li>
+          
             <li onClick={() => setComponent("search")}>Push Movie</li>
+            <li onClick={() => setComponent("iptv-list")}>IPTV</li>
+            <li onClick={() => setComponent("push-iptv")}>Push IPTV</li>
           </ul>
         </nav>
       </div>

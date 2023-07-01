@@ -9,6 +9,9 @@ export async function searchRequest(
   return await axios.post("/search", { title, language, page });
 }
 
-export async function pushElementRequest(element: object) {
-  return await axios.post("/push-element", { element });
+export async function pushElementMovieRequest(element: object) {
+  return await axios.post("/push-element-movie", { element });
+}
+export async function pushElementIpTvRequest(element: object) {
+  return await axios.post("/push-element-iptv", { element });
 }

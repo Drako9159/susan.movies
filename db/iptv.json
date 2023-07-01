@@ -1,0 +1,11 @@
+[
+  {
+    "id": "25bdfc3c-8768-43be-ac91-b931e2b2ae1b",
+    "poster_path": "https://i.imgur.com/rRxgBtI.png",
+    "backdrop_path": "https://i.imgur.com/rRxgBtI.png",
+    "title": "TV Azteca",
+    "overview": "Canal de TV Azteca",
+    "source": "https://mdstrm.com/live-stream-playlist/609b243156cca108312822a6.m3u8",
+    "source_type": "application/x-mpegURL"
+  }
+]

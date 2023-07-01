@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { getMoviesRequest } from "../api/movies";
 import { useMoviesStore } from "../store/movies";
-import CardPrimaryMovie from "../components/Movies/CardPrimaryMovie";
 import AvailableMovies from "../components/Movies/AvailableMovies";
+import AvailableIptv from "../components/IPTV/AvailableIptv";
 
 export default function Movies() {
   const setMovies = useMoviesStore((state) => state.setMoviesStore);
@@ -18,7 +18,7 @@ export default function Movies() {
   return (
     <>
       <AvailableMovies />
-      {/* <CardPrimaryMovie></CardPrimaryMovie> */}
+      <AvailableIptv />
     </>
   );
 }

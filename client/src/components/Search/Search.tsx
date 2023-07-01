@@ -1,9 +1,13 @@
-import { pushElementRequest, searchRequest } from "../../api/search";
+import { pushElementMovieRequest, searchRequest } from "../../api/search";
 import { useRef, useState } from "react";
 import { useSearchStore } from "../../store/search";
 import styles from "./Search.module.css";
+import { getMoviesRequest } from "../../api/movies";
+import { useMoviesStore } from "../../store/movies";
 
-export default function Search() {
+export default function Search({ setComponent, setTitle }: { setComponent: any, setTitle: any }) {
+  setTitle("Push Movie")
+  const setMovies = useMoviesStore((state) => state.setMoviesStore);
   const setResultsStore = useSearchStore((state) => state.setResultsStore);
   const results = useSearchStore((state) => state.results);
   const [item, setItem] = useState<any>(null);
@@ -32,7 +36,6 @@ export default function Search() {
     const pageValue = pageRef.current?.value;
 
     api(titleValue!, languageValue!, pageValue!);
-
   }
   function handleSelector(element: any) {
     setItem(element);
@@ -51,7 +54,12 @@ export default function Search() {
       source_type: sourceTypeValue,
     };
 
-    const res = await pushElementRequest(prepare);
+    const res = await pushElementMovieRequest(prepare);
+    if (res.status === 200) {
+      const res = await getMoviesRequest();
+      setMovies(res.data.content);
+      setComponent("movies");
+    }
   }
 
   return (

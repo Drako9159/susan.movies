@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  
 }
 
 .info {
@@ -22,12 +23,14 @@
   height: 250px;
   border-radius: 5px;
   padding: 10px;
-  
+  object-fit: contain;
+  width: 50%;
 }
 
 .right {
   padding: 10px;
   backdrop-filter: blur(5px);
+ 
 }
 
 .right ul {
@@ -75,7 +78,7 @@
   z-index: 1;
   filter: brightness(70%);
   height: 100%;
-
+  
   object-fit: cover;
 }
 .overviewTop {
