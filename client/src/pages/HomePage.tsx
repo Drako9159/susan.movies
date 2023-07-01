@@ -1,9 +1,8 @@
-import Search from "../components/Search/Search";
-
+import Movies from "./Movies";
 export default function HomePage() {
   return (
     <>
-      <Search />
+      <Movies />
     </>
   );
 }

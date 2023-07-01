@@ -32,6 +32,13 @@ ENV DOMAIN='https://susan.fly.dev'
 ENV PORT='3000'
 ENV BACKEND_URL='https://susan.fly.dev'
 
+ENV USER_KEY_BACKEND='$2b$12$I6eUa0Ji7U0ulsR90Xif/umlgxmuWZCE9.2sELTB23.lrO0bi4RoW'
+ENV PASSWORD_KEY_BACKEND='$2b$12$dkCIi7bpuuWUmTywBhaThed2xquz7ge99tZX8B1vO0iNTRbnv6f.S'
+ENV JWT_SECRET='$2b$12$Fb92RDuivA06PGsEYm8e2.sS06Sv0Qmfdn6F62ERNThiN7zMJq7M6'
+
+ENV VITE_USER_KEY='drako.drako'
+ENV VITE_USER_PASSWORD='drakolin'
+
 # Expose the desired port
 EXPOSE 3000
 

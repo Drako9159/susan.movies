@@ -5,17 +5,23 @@ import Layout from "./components/Extra/Layout";
 import Movies from "./pages/Movies";
 import Watcher from "./pages/Watcher";
 import Dashboard from "./pages/Dashboard";
+import ScrollTopTop from "./hooks/useScroll";
+import useAuth from "./hooks/useAuth";
+import NotFound from "./components/Extra/NotFound";
 
 export default function App() {
+  useAuth();
   return (
     <Layout>
       <Wrapper>
         <BrowserRouter>
+          <ScrollTopTop />
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/movies" element={<Movies />} />
             <Route path="/movies/:id" element={<Watcher />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
       </Wrapper>

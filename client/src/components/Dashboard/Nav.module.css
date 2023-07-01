@@ -1,12 +1,32 @@
 .container {
+  background-color: #424242;
+  width: 100vw;
+  font-family: "Montserrat";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .title {
+  text-align: center;
+  color: #ffffff;
+  
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 6px;
+  margin: 0;
+}
+
+.nav {
   position: absolute;
   top: 0;
   left: 0;
   color: white;
-  font-family: "Montserrat";
+
+  transition: background-color 0.5s ease;
 }
 
-.container ul {
+.nav ul {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -18,11 +38,11 @@
   text-overflow: hidden;
   overflow: hidden;
 }
-.container ul li {
+.nav ul li {
   margin: 0;
   padding: 10px 20px;
 }
-.container ul li:hover {
+.nav ul li:hover {
   background-color: #5f5f5f;
 }
 .actions {
@@ -35,17 +55,15 @@
   background-color: #777777;
 }
 .actions img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   padding: 5px;
 }
 
 .navOut {
   transition: max-width 0.3s ease;
   max-width: 0px;
-  
 }
 .navIn {
   max-width: 300px;
-  
 }
