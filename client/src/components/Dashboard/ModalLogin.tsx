@@ -14,7 +14,7 @@ export default function ModalLogin() {
     try {
       await dashboardLoginRequest(username, password).then((res) => {
         setToken(res.headers.authorization);
-        console.log(token);
+       
       });
     } catch (err) {
       console.log(err);

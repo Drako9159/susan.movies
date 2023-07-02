@@ -68,5 +68,74 @@
     "quality": "TS-HQ",
     "source": "https://delivery555.akamai-video-content.com/hls2/01/12333/vrfmp3wkduma_l/index-v1-a1.m3u8?t=Pg4xESfFO8fILd02mwWM1tWZRb9rlXv-8OKtTJ79HWw&s=1688242874&e=10800&f=61689743&srv=sto230&client=189.193.230.248&asn=13999",
     "source_type": "application/x-mpegURL"
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/jxnGIXrVIftV5ruaUeXaHhxwAWA.jpg",
+    "id": 50136,
+    "title": "Transmutators",
+    "original_language": "tl",
+    "original_title": "Resiklo",
+    "overview": "En una época en la que los mutantes y los gigantescos guerreros alienígenas han llegado a la regla, un grupo rebelde de supervivientes debe adoptar megamáquinas de combate para enfrentarse a los invasores intergalácticos que amenazan a la humanidad.",
+    "poster_path": "/2ImE5thLOnPCtMOfbtr4yoK7pDd.jpg",
+    "media_type": "movie",
+    "genre_ids": [
+      28,
+      878
+    ],
+    "popularity": 5.778,
+    "release_date": "2007-12-25",
+    "video": false,
+    "vote_average": 3.8,
+    "vote_count": 6,
+    "quality": "TS-HQ",
+    "source": "https://basicdev.one/api/v1/manifest.m3u8?id=MLQPx5k0Z5p&source=3d808789-3ac4-4e3c-a7a5-9c1f0743f319",
+    "source_type": "application/x-mpegURL"
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/m1fgGSLK0WvRpzM1AmZu38m0Tx8.jpg",
+    "id": 842945,
+    "title": "Supercell",
+    "original_language": "en",
+    "original_title": "Supercell",
+    "overview": "El adolescente de buen corazón William siempre vivió con la esperanza de seguir los pasos de su difunto padre y convertirse en un cazador de tormentas. El legado de su padre ahora se ha convertido en un negocio turístico que persigue tormentas, administrado por el codicioso e imprudente Zane Rogers, quien ahora está usando a William como la principal atracción para guiar a un grupo de aventureros desprevenidos a lo más profundo del ojo de la supercélula más peligrosa de la historia. visto.",
+    "poster_path": "/6uaKRc0Di2pfhRLFQaH5BntSJOH.jpg",
+    "media_type": "movie",
+    "genre_ids": [
+      28
+    ],
+    "popularity": 122.612,
+    "release_date": "2023-03-17",
+    "video": false,
+    "vote_average": 6.152,
+    "vote_count": 168,
+    "quality": "TS-HQ",
+    "source": "https://basicdev.one/api/v1/manifest.m3u8?id=oMq8q9Nx23o&source=274261f3-3198-482b-8930-a73d7736b063",
+    "source_type": "application/x-mpegURL"
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/nBEFrdcVhwceGSFw83RksxY9Blg.jpg",
+    "id": 649609,
+    "title": "Renfield",
+    "original_language": "en",
+    "original_title": "Renfield",
+    "overview": "En este moderno y monstruoso relato sobre el fiel ayudante de Drácula, Renfield se ve obligado a procurarle víctimas a su amo y hacer todo aquello que este le ordene, por inmoral que sea. Pero ahora, tras siglos de servidumbre, Renfield está listo para descubrir si hay vida lejos de la alargada sombra del Príncipe de las Tinieblas. ¿El problema? Que no sabe cómo romper esa relación de dependencia.",
+    "poster_path": "/uGw4zPyiBAx9B1j9pKYWSvFiLug.jpg",
+    "media_type": "movie",
+    "genre_ids": [
+      35,
+      27,
+      14
+    ],
+    "popularity": 194.974,
+    "release_date": "2023-04-07",
+    "video": false,
+    "vote_average": 6.843,
+    "vote_count": 728,
+    "quality": "TS-HQ",
+    "source": "https://basicdev.one/api/v1/manifest.m3u8?id=PZVZbvY2WmP&source=6e8079bd-4b4a-4cf6-8497-44a97b0ab968",
+    "source_type": "application/x-mpegURL"
   }
 ]

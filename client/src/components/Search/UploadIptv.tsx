@@ -3,9 +3,9 @@ import { useIptvStore } from "../../store/iptv";
 import styles from "./UploadIptv.module.css";
 import { useRef } from "react";
 
-export default function UploadIptv({ setComponent, setTitle }: { setComponent: any, setTitle: any }) {
+export default function UploadIptv({ setComponent}: { setComponent: any}) {
   const setIptvStore = useIptvStore((state) => state.setIptvStore);
-  setTitle("Push IPTV")
+  
   const sourceRef = useRef<HTMLInputElement>(null);
   const sourceTypeRef = useRef<HTMLSelectElement>(null);
   const titleRef = useRef<HTMLInputElement>(null);

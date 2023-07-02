@@ -4,21 +4,22 @@ import { useMoviesStore } from "../../store/movies";
 import styles from "./CardPrimaryDashboard.module.css";
 import UpdateMovie from "../Search/UpdateMovie";
 
-export default function CardPrimaryDashboard({ setTitle }: { setTitle: any }) {
-  setTitle("Movies");
+export default function CardPrimaryDashboard() {
+ 
   const setMovies = useMoviesStore((state) => state.setMoviesStore);
   const movies = useMoviesStore((state) => state.movies);
   const [item, setItem] = useState<any>(null);
   const [isUpdate, setIsUpdate] = useState<boolean>(false);
 
   useEffect(() => {
+    async function api() {
+      const res = await getMoviesRequest();
+      setMovies(res.data.content);
+    }
     api();
   }, []);
 
-  async function api() {
-    const res = await getMoviesRequest();
-    setMovies(res.data.content);
-  }
+  
 
   async function deleteMovie(id: string) {
     const res = await deleteMovieRequest(id);

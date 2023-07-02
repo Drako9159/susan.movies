@@ -5,8 +5,8 @@ import styles from "./IptvList.module.css";
 import UpdateIptv from "../Search/UpdateIptv";
 import { useIptvStore } from "../../store/iptv";
 
-export default function IptvList({ setTitle }: { setTitle: any }) {
-  setTitle("IPTV");
+export default function IptvList() {
+  
   const setIptvStore = useIptvStore((state) => state.setIptvStore);
   const iptvs = useIptvStore((state) => state.iptvs);
 

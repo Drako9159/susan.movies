@@ -5,8 +5,7 @@ import styles from "./Search.module.css";
 import { getMoviesRequest } from "../../api/movies";
 import { useMoviesStore } from "../../store/movies";
 
-export default function Search({ setComponent, setTitle }: { setComponent: any, setTitle: any }) {
-  setTitle("Push Movie")
+export default function Search({ setComponent }: { setComponent: any }) {
   const setMovies = useMoviesStore((state) => state.setMoviesStore);
   const setResultsStore = useSearchStore((state) => state.setResultsStore);
   const results = useSearchStore((state) => state.results);
@@ -16,7 +15,6 @@ export default function Search({ setComponent, setTitle }: { setComponent: any, 
   async function api(title: string, language: string, page: string) {
     await searchRequest(title, language, page).then((res) => {
       setResultsStore(res.data.content.results);
-      console.log(res.data.content);
     });
   }
 
