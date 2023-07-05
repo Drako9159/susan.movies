@@ -14,29 +14,6 @@ export async function search(req: Request, res: Response): Promise<Response> {
   return res.send({ content: data });
 }
 
-// async function api(
-//   title: string = "pikachu",
-//   language: string = "es",
-//   page: string = "1"
-// ) {
-//   const url = `https://api.themoviedb.org/3/search/multi?query=${title}&include_adult=true&language=${language}&page=${page}`;
-//   const options = {
-//     method: "GET",
-//     headers: {
-//       accept: "application/json",
-//       Authorization:
-//         "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4MTliMDFlZDM0NmNhZWY2ZmEzODJhZWM3ZmE3OGFiNSIsInN1YiI6IjYzMzYwOWJjMjU1ZGJhMDA4MTY5ZDZmNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.y5sFjoFAoVU_W17h1dKh1-npovEmh2Lw12Ah9ABYzUQ",
-//     },
-//   };
-//   try {
-//     const response = await fetch(url, options);
-//     const data = await response.json();
-//     return data;
-//   } catch (error) {
-//     console.error("Error:", error);
-//   }
-// }
-
 
 async function api(
   title: string = "pikachu",

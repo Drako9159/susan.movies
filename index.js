@@ -7,7 +7,7 @@ async function run() {
   const page = await context.newPage();
 
   // Navegar a una página web
-  await page.goto("https://w4.cuevana3.ai/67762/fast-x");
+  await page.goto("https://example.com");
 
   await page.waitForTimeout(5000);
 
