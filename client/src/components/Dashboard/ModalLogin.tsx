@@ -4,7 +4,6 @@ import styles from "./ModalLogin.module.css";
 
 export default function ModalLogin() {
   const setToken = useDashboardStore((state) => state.setToken);
-  const token = useDashboardStore((state) => state.token);
 
   async function handleLogin(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();

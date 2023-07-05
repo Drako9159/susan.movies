@@ -57,6 +57,7 @@ export default function Search({ setComponent }: { setComponent: any }) {
       const res = await getMoviesRequest();
       setMovies(res.data.content);
       setComponent("movies");
+      setItem(null);
     }
   }
 

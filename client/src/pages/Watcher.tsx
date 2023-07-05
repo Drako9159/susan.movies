@@ -3,6 +3,7 @@ import { getMovieRequest } from "../api/movies";
 import CardPrimaryWatcher from "../components/Watcher/CardPrimaryWatcher";
 import { useParams } from "react-router-dom";
 
+
 export default function Watcher() {
   const [movie, setMovie] = useState<any>({});
   const routeParams = useParams();
