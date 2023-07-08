@@ -30,7 +30,7 @@ export default function CardPrimaryDashboard() {
 
   function handleUpdate(id: string, element: any) {
     setItem({ id: id, element: element });
-    setIsUpdate(true);
+    setIsUpdate(false);
   }
 
   return (

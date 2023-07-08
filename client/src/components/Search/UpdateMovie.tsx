@@ -45,9 +45,7 @@ export default function UpdateMovie({
 
     const res = await updateMovieRequest(id, prepare);
     if (res.status === 200) {
-      api();
-
-
+      await api();
     }
   }
 
