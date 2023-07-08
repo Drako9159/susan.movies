@@ -1,6 +1,6 @@
 /node_modules
 /dist
 /.env
-
+/ngrok.exe
 
 /client/node_modules

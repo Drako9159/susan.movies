@@ -1,13 +1,13 @@
 import jwt, { JwtPayload } from "jsonwebtoken";
 import { decryptHash } from "../utils/handleCrypt";
-import { USER_KEY, PASSWORD_KEY, JWT_SECRET } from "../../config";
+import { USER_KEY_BACKEND, PASSWORD_KEY_BACKEND, JWT_SECRET } from "../../config";
 
 export async function loginAdmin(
   user: string,
   password: string
 ): Promise<string | boolean> {
-  const checkPass: boolean = await decryptHash(password, PASSWORD_KEY);
-  const checkUser: boolean = await decryptHash(user, USER_KEY);
+  const checkPass: boolean = await decryptHash(password, PASSWORD_KEY_BACKEND);
+  const checkUser: boolean = await decryptHash(user, USER_KEY_BACKEND);
   if (!checkPass || !checkUser) return false;
   return getToken(user);
 }

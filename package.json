@@ -7,7 +7,9 @@
     "dev": "nodemon index.ts",
     "build": "npx tsc",
     "start": "node dist/index.js",
-    "dev-ts": "concurrently \"nodemon -q index.ts\""
+    "build-client": "cd client && npm run build && cd .. && npm run build && npm run start",
+    "dev-ts": "concurrently \"nodemon -q index.ts\"",
+    "ngrok": ".\\ngrok http 3000"
   },
   "author": "drako9159",
   "license": "ISC",
