@@ -1,25 +1,46 @@
 [
   {
     "adult": false,
-    "backdrop_path": "/5rrGVmRUuCKVbqUu41XIWTXJmNA.jpg",
+    "backdrop_path": "/hziiv14OpD73u9gAak4XDDfBKa2.jpg",
     "genre_ids": [
       12,
-      14,
-      10751
+      14
     ],
-    "id": 674,
+    "id": 671,
     "original_language": "en",
-    "original_title": "Harry Potter and the Goblet of Fire",
-    "overview": "En el cuarto año en Hogwarts, Harry se enfrenta al mayor de los desafíos y peligros de la saga. Cuando es elegido bajo misteriosas circunstancias como el competidor que representará a Hogwarts en el Torneo Triwizard, Harry deberá competir contra los mejores jóvenes magos de toda Europa. Pero mientras se prepara, aparecen pruebas que manifiestan que Lord Voldemort ha regresado. Antes de darse cuenta, Harry no solo estará luchando por el campeonato sino también por su vida",
-    "popularity": 146.782,
-    "poster_path": "/sYPh29MkZTWewIL5adMwj5stqgA.jpg",
-    "release_date": "2005-11-16",
-    "title": "Harry Potter y el cáliz de fuego",
+    "original_title": "Harry Potter and the Philosopher's Stone",
+    "overview": "Harry Potter es un huérfano que vive con sus desagradables tíos, los Dursley, y su repelente primo Dudley. Se acerca su undécimo cumpleaños y tiene pocas esperanzas de recibir algún regalo, ya que nunca nadie se acuerda de él. Sin embargo, pocos días antes de su cumpleaños, una serie de misteriosas cartas dirigidas a él y escritas con una estridente tinta verde rompen la monotonía de su vida: Harry es un mago y sus padres también lo eran.",
+    "popularity": 160.455,
+    "poster_path": "/roKMM6S9DRGFNujmvqlk8l5YbN3.jpg",
+    "release_date": "2001-11-16",
+    "title": "Harry Potter y la piedra filosofal",
     "video": false,
-    "vote_average": 7.817,
-    "vote_count": 18957,
+    "vote_average": 7.917,
+    "vote_count": 24955,
     "quality": "Cam",
-    "source": "joder",
+    "source": "asd",
+    "source_type": "video/mp4"
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/AqLcLsGGTzAjm3pCCq0CZCQrp6m.jpg",
+    "genre_ids": [
+      12,
+      14
+    ],
+    "id": 12444,
+    "original_language": "en",
+    "original_title": "Harry Potter and the Deathly Hallows: Part 1",
+    "overview": "Una tarea casi imposible cae sobre los hombros de Harry: deberá encontrar y destruir los horrocruxes restantes para dar fin al reinado de Lord Voldemort. En el episodio final de la saga, el hechicero de 17 años parte junto con sus amigos Hermione Granger y Ron Weasley en un peligroso viaje por Inglaterra para encontrar los objetos que contienen los fragmentos del alma del Señor Tenebroso, los cuales garantizan su longevidad. Pero el camino no será fácil pues el lado oscuro adquiere más poder con cada minuto que pasa y las lealtades serán puestas a prueba. Harry deberá usar todos los conocimientos que gracias a Dumbledore ha adquirido sobre su enemigo para poder encontrar la forma de sobrevivir a esta última aventura.",
+    "popularity": 116.079,
+    "poster_path": "/w6wsYKdXERaXRdByPsI2O9rn20b.jpg",
+    "release_date": "2010-10-06",
+    "title": "Harry Potter y las Reliquias de la Muerte - Parte 1",
+    "video": false,
+    "vote_average": 7.768,
+    "vote_count": 17492,
+    "quality": "Cam",
+    "source": "fdgdfg",
     "source_type": "video/mp4"
   }
 ]
